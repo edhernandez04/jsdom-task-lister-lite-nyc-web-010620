@@ -4,6 +4,18 @@
   <meta charset="UTF-8">
   <title>Flatiron Task Lister</title>
   <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>jQuery UI Datepicker - Default functionality</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
+  </script>
 </head>
 <body>
   <div id="main-content">
@@ -12,6 +24,8 @@
     <form id="create-task-form" action="#" method="post">
       <label for="new-task-description">Task description:</label>
       <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <label for="due-date-description">Due Date:</label>
+      <input type="text" id="datepicker"> 
       <input type="submit" value="Create New Task">
     </form>
 
